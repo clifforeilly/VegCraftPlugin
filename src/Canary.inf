@@ -1,0 +1,5 @@
+main-class = info.flintandsteel.HelloWorld
+name = HelloWorld
+author = Cliff O'Reilly
+version = 0.1
+language = java
