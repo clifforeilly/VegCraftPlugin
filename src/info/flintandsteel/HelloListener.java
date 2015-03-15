@@ -1,21 +1,10 @@
 package info.flintandsteel;
 
 import net.canarymod.api.entity.living.humanoid.Player;
-import net.canarymod.api.entity.living.monster.Skeleton;
-import net.canarymod.api.world.Biome;
-import net.canarymod.api.world.BiomeType;
-import net.canarymod.api.world.blocks.Block;
-import net.canarymod.chat.Colors;
 import net.canarymod.chat.TextFormat;
-import net.canarymod.hook.Hook;
 import net.canarymod.hook.HookHandler;
 import net.canarymod.hook.player.BlockRightClickHook;
 import net.canarymod.hook.player.ConnectionHook;
-import net.canarymod.hook.player.PlayerMoveHook;
-import net.canarymod.hook.world.ChunkCreatedHook;
-import net.canarymod.hook.world.ChunkCreationHook;
-import net.canarymod.hook.world.ChunkLoadedHook;
-import net.canarymod.hook.world.IgnitionHook;
 import net.canarymod.plugin.PluginListener;
 
 /**
@@ -29,14 +18,12 @@ public class HelloListener implements PluginListener {
     public void onLogin(ConnectionHook hook) {
         hook.getPlayer().message(TextFormat.LIGHT_GREEN+"Hello World, "+hook.getPlayer().getName());
         hook.getPlayer().message(TextFormat.CYAN+"Welcome to the game!");
-
-
     }
 
     @HookHandler
     public void onRightClick(BlockRightClickHook hook)
     {
-        Player player = hook.getPlayer();
+        //Player player = hook.getPlayer();
         String blockname = hook.getBlockClicked().getType().getMachineName();
         hook.getPlayer().message(TextFormat.CYAN+"s");
         hook.getPlayer().message(TextFormat.GREEN+blockname);

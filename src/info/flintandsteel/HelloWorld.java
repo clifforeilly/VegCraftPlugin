@@ -2,12 +2,10 @@ package info.flintandsteel;
 
 import net.canarymod.Canary;
 import net.canarymod.api.Server;
-import net.canarymod.api.inventory.CanaryItem;
 import net.canarymod.api.inventory.Item;
 import net.canarymod.api.inventory.recipes.CraftingRecipe;
 import net.canarymod.api.inventory.recipes.RecipeRow;
 import net.canarymod.plugin.Plugin;
-
 import java.util.logging.Logger;
 
 /**
@@ -15,7 +13,7 @@ import java.util.logging.Logger;
  */
 public class HelloWorld extends Plugin {
 
-    static Logger log = Logger.getLogger("Minecraft");
+    //static Logger log = Logger.getLogger("Minecraft");
     Server svr = Canary.getServer();
 
     @Override
