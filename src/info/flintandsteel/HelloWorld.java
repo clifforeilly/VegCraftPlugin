@@ -50,42 +50,42 @@ public class HelloWorld extends Plugin {
         String rsVegArrows1 = " X ";
         String rsVegArrows2 = " Y ";
         String rsVegArrows3 = " Z ";
-        Item itemOutVegArrows = new CanaryItem(IDArrow,1,0);
-        Item[] itemInVegArrowsFlint = {new CanaryItem(IDFlint,1,0)};
-        Item[] itemInVegArrowsStick = {new CanaryItem(IDStick,1,0)};
-        Item[] itemInVegArrowsLilyPad = {new CanaryItem(IDLilyPad,1,0)};
+        Item itemOutVegArrows = Canary.factory().getItemFactory().newItem(IDArrow,4,0);
+        Item[] itemInVegArrowsFlint = {Canary.factory().getItemFactory().newItem(IDFlint,1,0)};
+        Item[] itemInVegArrowsStick = {Canary.factory().getItemFactory().newItem(IDStick,1,0)};
+        Item[] itemInVegArrowsLilyPad = {Canary.factory().getItemFactory().newItem(IDLilyPad,1,0)};
         RecipeRow rrVegArrows1 = new RecipeRow(rsVegArrows1, itemInVegArrowsFlint);
         RecipeRow rrVegArrows2 = new RecipeRow(rsVegArrows2, itemInVegArrowsStick);
         RecipeRow rrVegArrows3 = new RecipeRow(rsVegArrows3, itemInVegArrowsLilyPad);
         RecipeRow[] rrArrayVegArrows = {rrVegArrows1,rrVegArrows2,rrVegArrows3};
         CraftingRecipe crVegArrows = new CraftingRecipe(itemOutVegArrows,rrArrayVegArrows);
         svr.addRecipe(crVegArrows);
-
+        getLogman().info("Added 'Varrows'");
 
         //Easy shears
         String rsEasyShears1 = "XYX";
         String rsEasyShears2 = "XYX";
-        Item itemOutEasyShears = new CanaryItem(IDShears,1,0);
-        Item[] itemInEasyShearsStickFlint = {new CanaryItem(IDStick,1,0), new CanaryItem(IDFlint,1,0)};
+        Item itemOutEasyShears = Canary.factory().getItemFactory().newItem(IDShears,1,0);
+        Item[] itemInEasyShearsStickFlint = {Canary.factory().getItemFactory().newItem(IDStick,1,0), Canary.factory().getItemFactory().newItem(IDFlint,1,0)};
         RecipeRow rrEasyShears1 = new RecipeRow(rsEasyShears1, itemInEasyShearsStickFlint);
         RecipeRow rrEasyShears2 = new RecipeRow(rsEasyShears2, itemInEasyShearsStickFlint);
         RecipeRow[] rrArrayEasyShears = {rrEasyShears1, rrEasyShears2};
         CraftingRecipe crEasyShears = new CraftingRecipe(itemOutEasyShears, rrArrayEasyShears);
         svr.addRecipe(crEasyShears);
-
+        getLogman().info("Added 'Easy Shears'");
 
         //faux leather
         String rsFauxLeather1 = " X ";
         String rsFauxLeather2 = " Y ";
-        Item itemOutFauxLeather = new CanaryItem(IDLeather,1,0);
-        Item[] itemInFauxLeatherOrangeDye = {new CanaryItem(IDOrangeDye,1,0)};
-        Item[] itemInFauxLeatherLilyPad = {new CanaryItem(IDLilyPad,1,0)};
+        Item itemOutFauxLeather = Canary.factory().getItemFactory().newItem(IDLeather,2,0);
+        Item[] itemInFauxLeatherOrangeDye = {Canary.factory().getItemFactory().newItem(IDOrangeDye,1,0)};
+        Item[] itemInFauxLeatherLilyPad = {Canary.factory().getItemFactory().newItem(IDLilyPad,1,0)};
         RecipeRow rrFauxLeather1 = new RecipeRow(rsFauxLeather1, itemInFauxLeatherOrangeDye);
         RecipeRow rrFauxLeather2 = new RecipeRow(rsFauxLeather2, itemInFauxLeatherLilyPad);
         RecipeRow[] rrArrayFauxLeather = {rrFauxLeather1,rrFauxLeather2};
         CraftingRecipe crFauxLeather = new CraftingRecipe(itemOutFauxLeather,rrArrayFauxLeather);
         svr.addRecipe(crFauxLeather);
-
+        getLogman().info("Added 'Faux Leather'");
     }
 
 }
