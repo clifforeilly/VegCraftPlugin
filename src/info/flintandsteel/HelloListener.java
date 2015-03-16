@@ -1,6 +1,7 @@
 package info.flintandsteel;
 
 import net.canarymod.api.entity.living.humanoid.Player;
+import net.canarymod.api.inventory.CanaryPlayerCraftingMatrix;
 import net.canarymod.chat.TextFormat;
 import net.canarymod.hook.HookHandler;
 import net.canarymod.hook.player.BlockRightClickHook;
@@ -45,6 +46,11 @@ public class HelloListener implements PluginListener {
             if(hook.getMatchingRecipe().getResult().getDisplayName().contains("Shears") && hook.getMatchingRecipe().getRecipeSize()==3)
             {
                 player.message("You made Easy " + hook.getMatchingRecipe().getResult().getDisplayName());
+
+
+                //CanaryPlayerCraftingMatrix gh = new CanaryPlayerCraftingMatrix();
+
+
 
                 //getLogman().info(r.getRecipeSize());
             }

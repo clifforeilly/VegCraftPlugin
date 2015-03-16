@@ -59,50 +59,50 @@ public class HelloWorld extends Plugin {
     public void createRecipes(){
 
         CraftingRecipe crEasyShears = new CraftingRecipe(
-                Canary.factory().getItemFactory().newItem(ItemType.Shears),
-                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.Stick), Canary.factory().getItemFactory().newItem(ItemType.Cobble)})
+                Canary.factory().getItemFactory().newItem(ItemType.Shears, 0, 1),
+                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.Stick, 0, 1), Canary.factory().getItemFactory().newItem(ItemType.Cobble, 0, 1)})
         );
         Canary.getServer().addRecipe(crEasyShears);
         getLogman().info("Added 'Easy Shears'");
 
         CraftingRecipe crFauxLeatherAcacia = new CraftingRecipe(
-                Canary.factory().getItemFactory().newItem(ItemType.Leather),
-                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.AcaciaLeaves), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye)})
+                Canary.factory().getItemFactory().newItem(ItemType.Leather, 0, 1),
+                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.AcaciaLeaves, 0, 1), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye, 0, 1)})
         );
         Canary.getServer().addRecipe(crFauxLeatherAcacia);
         getLogman().info("Added 'Faux Leather Acacia'");
 
         CraftingRecipe crFauxLeatherBirch = new CraftingRecipe(
-                Canary.factory().getItemFactory().newItem(ItemType.Leather),
-                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.BirchLeaves), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye)})
+                Canary.factory().getItemFactory().newItem(ItemType.Leather, 0, 1),
+                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.BirchLeaves, 0, 1), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye, 0, 1)})
         );
         Canary.getServer().addRecipe(crFauxLeatherBirch);
         getLogman().info("Added 'Faux Leather Birch'");
 
         CraftingRecipe crFauxLeatherDarkOak = new CraftingRecipe(
-                Canary.factory().getItemFactory().newItem(ItemType.Leather),
-                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.DarkOakLeaves), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye)})
+                Canary.factory().getItemFactory().newItem(ItemType.Leather, 0, 1),
+                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.DarkOakLeaves, 0, 1), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye, 0, 1)})
         );
         Canary.getServer().addRecipe(crFauxLeatherDarkOak);
         getLogman().info("Added 'Faux Leather DarkOak'");
 
         CraftingRecipe crFauxLeatherJungle = new CraftingRecipe(
-                Canary.factory().getItemFactory().newItem(ItemType.Leather),
-                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.JungleLeaves), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye)})
+                Canary.factory().getItemFactory().newItem(ItemType.Leather, 0, 1),
+                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.JungleLeaves, 0, 1), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye, 0, 1)})
         );
         Canary.getServer().addRecipe(crFauxLeatherJungle);
         getLogman().info("Added 'Faux Leather Jungle'");
 
         CraftingRecipe crFauxLeatherOak = new CraftingRecipe(
-                Canary.factory().getItemFactory().newItem(ItemType.Leather),
-                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.OakLeaves), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye)})
+                Canary.factory().getItemFactory().newItem(ItemType.Leather, 0, 1),
+                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.OakLeaves, 0, 1), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye, 0, 1)})
         );
         Canary.getServer().addRecipe(crFauxLeatherOak);
         getLogman().info("Added 'Faux Leather Oak'");
 
         CraftingRecipe crFauxLeatherPine = new CraftingRecipe(
-                Canary.factory().getItemFactory().newItem(ItemType.Leather),
-                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.PineLeaves), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye)})
+                Canary.factory().getItemFactory().newItem(ItemType.Leather, 0, 1),
+                new RecipeRow("yxy", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.PineLeaves, 0, 1), Canary.factory().getItemFactory().newItem(ItemType.OrangeDye, 0, 1)})
         );
         Canary.getServer().addRecipe(crFauxLeatherPine);
         getLogman().info("Added 'Faux Leather Pine'");
