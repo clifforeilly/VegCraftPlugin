@@ -5,6 +5,7 @@ import net.canarymod.chat.TextFormat;
 import net.canarymod.hook.HookHandler;
 import net.canarymod.hook.player.BlockRightClickHook;
 import net.canarymod.hook.player.ConnectionHook;
+import net.canarymod.hook.player.CraftHook;
 import net.canarymod.plugin.PluginListener;
 
 /**
@@ -28,6 +29,21 @@ public class HelloListener implements PluginListener {
         hook.getPlayer().message(TextFormat.CYAN+"s");
         hook.getPlayer().message(TextFormat.GREEN+blockname);
         hook.getPlayer().message(TextFormat.CYAN+"e");
+    }
+
+    @HookHandler
+    public void onCraft(CraftHook hook) {
+        Player player = hook.getPlayer();
+        //Integer rs = hook.getMatchingRecipe().getRecipeSize();
+        //String h = hook.getPlayer().
+        player.message("Something was made, " + player.getDisplayName() + "!");
+        //player.message(player.getItemHeld().getDisplayName());
+        //String g = hook.getMatchingRecipe()
+        //player.message(g);
+        if(hook.getMatchingRecipe()!=null)
+        {
+            player.message("matching recipe item " + hook.getMatchingRecipe().getResult().getDisplayName());
+        }
     }
 
     /*
