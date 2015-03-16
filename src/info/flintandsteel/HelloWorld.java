@@ -39,14 +39,6 @@ public class HelloWorld extends Plugin {
         listRecipes("nothing");
     }
 
-    Integer IDArrow = 262;
-    Integer IDFlint = 318;
-    Integer IDStick = 280;
-    Integer IDLilyPad = 111;
-    Integer IDShears = 359;
-    Integer IDLeather = 343;
-    Integer IDOrangeDye = 359;
-
     public void listRecipes(String name)
     {
         List<Recipe> recipes = svr.getServerRecipes();
