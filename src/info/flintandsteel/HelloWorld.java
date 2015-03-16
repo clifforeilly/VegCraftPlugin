@@ -65,48 +65,6 @@ public class HelloWorld extends Plugin {
     }
 
     public void createRecipes(){
-/*      //Veg arrows
-        String rsVegArrows1 = " X ";
-        String rsVegArrows2 = " Y ";
-        String rsVegArrows3 = " Z ";
-        Item itemOutVegArrows = Canary.factory().getItemFactory().newItem(ItemType.Arrow);
-        Item[] itemInVegArrowsFlint = {Canary.factory().getItemFactory().newItem(ItemType.Flint)};
-        Item[] itemInVegArrowsStick = {Canary.factory().getItemFactory().newItem(ItemType.Stick)};
-        Item[] itemInVegArrowsLilyPad = {Canary.factory().getItemFactory().newItem(ItemType.Lilypad)};
-        RecipeRow rrVegArrows1 = new RecipeRow(rsVegArrows1, itemInVegArrowsFlint);
-        RecipeRow rrVegArrows2 = new RecipeRow(rsVegArrows2, itemInVegArrowsStick);
-        RecipeRow rrVegArrows3 = new RecipeRow(rsVegArrows3, itemInVegArrowsLilyPad);
-        RecipeRow[] rrArrayVegArrows = {rrVegArrows1,rrVegArrows2,rrVegArrows3};
-        CraftingRecipe crVegArrows = new CraftingRecipe(itemOutVegArrows,rrArrayVegArrows);
-        svr.addRecipe(crVegArrows);
-        getLogman().info("Added 'Varrows'");
-
-        //Easy shears
-        String rsEasyShears1 = "XYX";
-        String rsEasyShears2 = "XYX";
-        Item itemOutEasyShears = Canary.factory().getItemFactory().newItem(ItemType.Shears);
-        Item[] itemInEasyShearsStickFlint = {Canary.factory().getItemFactory().newItem(ItemType.Stick), Canary.factory().getItemFactory().newItem(ItemType.Flint)};
-        RecipeRow rrEasyShears1 = new RecipeRow(rsEasyShears1, itemInEasyShearsStickFlint);
-        RecipeRow rrEasyShears2 = new RecipeRow(rsEasyShears2, itemInEasyShearsStickFlint);
-        RecipeRow[] rrArrayEasyShears = {rrEasyShears1, rrEasyShears2};
-        CraftingRecipe crEasyShears = new CraftingRecipe(itemOutEasyShears, rrArrayEasyShears);
-        svr.addRecipe(crEasyShears);
-        getLogman().info("Added 'Easy Shears'");
-
-
-        //faux leather
-        String rsFauxLeather1 = " X ";
-        String rsFauxLeather2 = " Y ";
-        Item itemOutFauxLeather = Canary.factory().getItemFactory().newItem(ItemType.Leather);
-        Item[] itemInFauxLeatherOrangeDye = {Canary.factory().getItemFactory().newItem(ItemType.OrangeDye)};
-        Item[] itemInFauxLeatherLilyPad = {Canary.factory().getItemFactory().newItem(ItemType.Lilypad)};
-        RecipeRow rrFauxLeather1 = new RecipeRow(rsFauxLeather1, itemInFauxLeatherOrangeDye);
-        RecipeRow rrFauxLeather2 = new RecipeRow(rsFauxLeather2, itemInFauxLeatherLilyPad);
-        RecipeRow[] rrArrayFauxLeather = {rrFauxLeather1,rrFauxLeather2};
-        CraftingRecipe crFauxLeather = new CraftingRecipe(itemOutFauxLeather,rrArrayFauxLeather);
-        svr.addRecipe(crFauxLeather);
-        getLogman().info("Added 'Faux Leather'");
-        */
 
         CraftingRecipe crEasyShears = new CraftingRecipe(
                 Canary.factory().getItemFactory().newItem(ItemType.Shears),
@@ -166,16 +124,6 @@ public class HelloWorld extends Plugin {
         Canary.getServer().addRecipe(VegArrows);
         getLogman().info("Added 'VegArrows'");
 
-        /*
-        CraftingRecipe testrecipe = new CraftingRecipe(
-                Canary.factory().getItemFactory().newItem(ItemType.Shears),
-                new RecipeRow(" x ", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.Lilypad)}),
-                new RecipeRow(" x ", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.Lilypad)}),
-                new RecipeRow(" x ", new Item[]{Canary.factory().getItemFactory().newItem(ItemType.Lilypad)})
-        );
-        Canary.getServer().addRecipe(testrecipe);
-        getLogman().info("Added 'test'");
-        */
     }
 
 }

@@ -36,55 +36,19 @@ public class HelloListener implements PluginListener {
         Player player = hook.getPlayer();
         //Integer rs = hook.getMatchingRecipe().getRecipeSize();
         //String h = hook.getPlayer().
-        player.message("Something was made, " + player.getDisplayName() + "!");
+        //player.message("Something was made, " + player.getDisplayName() + "!");
         //player.message(player.getItemHeld().getDisplayName());
         //String g = hook.getMatchingRecipe()
         //player.message(g);
         if(hook.getMatchingRecipe()!=null)
         {
-            player.message("matching recipe item " + hook.getMatchingRecipe().getResult().getDisplayName());
+            if(hook.getMatchingRecipe().getResult().getDisplayName().contains("Shears") && hook.getMatchingRecipe().getRecipeSize()==3)
+            {
+                player.message("You made Easy " + hook.getMatchingRecipe().getResult().getDisplayName());
+
+                //getLogman().info(r.getRecipeSize());
+            }
         }
     }
-
-    /*
-    @HookHandler
-    public void notifyPlayer(String msg) {
-        //ConnectionHook hook = ConnectionHook;
-        hk.getPlayer().message(Colors.CYAN+msg);
-    }
-    */
-
-    /*
-    @HookHandler
-    public void ig(IgnitionHook hook)   {
-        String o;
-        o = String.valueOf(hook.getBlock().getType().getId());
-        notifyPlayer(o);
-    }
-    */
-
-    /*
-    @HookHandler
-    public void onWalk(PlayerMoveHook hook) {
-        String x = String.valueOf(hook.getPlayer().getPosition().getBlockX());
-        String y = String.valueOf(hook.getPlayer().getPosition().getBlockY());
-        String z = String.valueOf(hook.getPlayer().getPosition().getBlockZ());
-        hook.getPlayer().message(Colors.CYAN+"["+x+":"+y+":"+z+"]");
-        //notifyPlayer(Colors.RED+"["+x+":"+y+":"+z+"]");
-    }
-    */
-
-    /*
-    @HookHandler
-    public void onChunkCreate(ChunkCreationHook hook) {
-        BiomeType[] bt = new BiomeType[2];
-        bt[0]=BiomeType.FOREST;
-        bt[1]=BiomeType.HELL;
-        notifyPlayer("hey!");
-        hook.setBiomeData(bt);
-    }
-    */
-
-
 
 }
